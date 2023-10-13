@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Contact Information</h2>
+        <p>You can reach me through the following channels:</p>
+        <ul>
+            <li>Email: koketso.lepulana@email.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">LinkedIn Profile</a></li>
+            <!-- Add more contact information if needed -->
+        </ul>
+    </section>
+</body>
+</html>
