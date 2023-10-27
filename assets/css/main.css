@@ -1574,6 +1574,11 @@ input, select, textarea {
 	}
 
 /* Tables */
+.non-clickable {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none; /* Optional to remove underline */
+}
 
 	table {
 		width: 100%;
