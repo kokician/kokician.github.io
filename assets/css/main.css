@@ -2,7 +2,6 @@
 @import url("fontawesome-all.min.css");
 
 /*
-	Miniport by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -222,10 +221,21 @@ input, select, textarea {
 		}
 
 /* Container */
+	
+	
+	/* Add this to your existing styles or create a new style sheet */
+	.container-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center; /* Optional, if you want to center text within child elements */
+	}
+
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 50px);
+		max-width: calc(100% - 285px);
 		width: 1200px;
 	}
 
@@ -1613,6 +1623,14 @@ input, select, textarea {
 			}
 
 /* Section/Article */
+		.article-container {
+			text-align: center; /* Center text/content within the container */
+		}
+
+		.box {
+			display: inline-block; /* Make the container a block element with inline behavior */
+			text-align: center; /* Reset text alignment to left for content within the container */
+		}
 
 	section, article {
 		margin-bottom: 3em;
@@ -1691,7 +1709,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #43dbe0;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1920,6 +1938,7 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+		max-width: 600px;
 	}
 
 		.box.style1 {
@@ -1935,10 +1954,7 @@ input, select, textarea {
 		}
 
 		.box.style2 .image {
-			position: relative;
-			left: 2em;
-			top: 2em;
-			margin: -4em 0 4em -4em;
+			max-width: 100%;
 			width: auto;
 		}
 
