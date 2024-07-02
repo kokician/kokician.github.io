@@ -21,6 +21,8 @@ body{
     /* background-image: url('./images/IMG_8963.JPG'); */
     background-size: cover;
     background-position: center;
+    /* padding: 20px;
+    margin-bottom: 40px; */
 }
 
 .container {
@@ -67,7 +69,7 @@ nav ul li a:hover::after{
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 
@@ -323,7 +325,7 @@ nav ul li a:hover::after{
   }
   @media only screen and (max-width: 709px){
     .header-text{
-      margin-top: 100%;
+      margin-top: 50%;
       font-size: 16px;
     }
     .header-text h1{
@@ -377,3 +379,5 @@ nav ul li a:hover::after{
         font-size:14px;
     }
   }
+
+  

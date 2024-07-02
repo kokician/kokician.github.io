@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Koketso Lepulana Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/ae1fa5da41.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="./images/Koketso.png" class="logo"/>
+                    <img src="./images/Koketso.png" alt="Logo of Koketso" class="logo">
                     <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
+                        <li><a href="#header" onclick="closemenu()">Home</a></li>
+                        <li><a href="#about" onclick="closemenu()">About</a></li>
+                        <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                        <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                    </ul>                    
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
@@ -27,13 +27,12 @@
                     <h1>Hi, I'm <span>Koketso</span> Lepulana<br> from South Africa</h1>
                 </div>
             </div>
-            <!--------------------- ABOUT -------------->
         </div>
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/kokiejpg.jpg" class="about-img"/>
+                        <img src="images/kokiejpg.jpg" alt="Koketso's photo" class="about-img">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
@@ -69,21 +68,20 @@
                     </div>
                 </div>
             </div>
-            <!--------------------- Portfolio -------------->
             <div id="portfolio">
                 <div class="container">
                     <h1 class="sub-title">Portfolio</h1>
                     <div class="work-list">
                         <div class="work">
-                            <img src="images/movie.jpg" width="300px" height="300px"/>
+                            <img src="images/movie.jpg" alt="Movie App screenshot" width="300" height="300">
                             <div class="layer">
                                 <h3>Movie App</h3>
                                 <p>This is a movie app that allows you to search for movies and view their details</p>
-                                <a href="https://starstream-angkok.netlify.app""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://starstream-angkok.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                         <div class="work">
-                            <img src="images/shopping-apps.jpg" width="300px" height="300px"/>
+                            <img src="images/shopping-apps.jpg" alt="Shopping Cart App screenshot" width="300" height="300">
                             <div class="layer">
                                 <h3>Shopping Cart App</h3>
                                 <p>Coming Soon...</p>
@@ -105,7 +103,7 @@
                             <a href="https://www.linkedin.com/in/koketso-lepulana-053431202/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/kokiGodsking"><i class="fa-brands fa-github"></i></a>
                         </div>
-                        <a href="assets/cv/lepulana koketso 2020cv-1-1-1.docx.pdf" download class="btn btn2">Download Cv</a>
+                        <a href="assets/cv/lepulana-koketso-2020cv-1-1-1.docx.pdf" download class="btn btn2">Download Cv</a>
                     </div>
                     <div class="contact-right">
                         <form>
@@ -133,6 +131,8 @@
                }
                event.currentTarget.classList.add("active-link");
                document.getElementById(tabname).classList.add("active-tab");
+               
+               closemenu();
             }
         </script>
         <script>
